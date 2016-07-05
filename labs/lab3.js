@@ -21,3 +21,10 @@ logger.on('getMsgs', function(){
 	console.log('-------\nMessages:\n-------');
 	console.log(msgs.join('\n'));
 });
+////////////////////////////////////////
+logger.emit('login', 'Jhon');
+logger.emit('message', 'Hello from Jhon');
+logger.emit('login', 'Mike');
+logger.emit('message', 'Hello from Mike');
+logger.emit('getUsers');
+logger.emit('getMsgs');
